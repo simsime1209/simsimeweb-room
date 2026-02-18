@@ -2,15 +2,6 @@ import React from 'react';
 import '../../index.css'
 import { motion } from "framer-motion";
 
-//import app icons
-import '/images/papertexture.jpg';
-import '/images/icon-github.png';
-import '/images/icon-linkedin.png';
-import '/images/icon-mail.png';
-import '/images/icon-resume.png';
-import '/images/icon-devpost.png';
-
-
 const ContactModal = () => {
     const cardVariants = {
         hidden: { scale: 0, opacity: 0, rotateX: 0 },

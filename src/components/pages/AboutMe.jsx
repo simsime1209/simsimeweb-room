@@ -2,14 +2,6 @@ import React from 'react';
 import '../../index.css'
 import { motion } from 'framer-motion';
 
-import '/images/papertexture-22.png'
-import '/images/aboutme-baby.png'
-import '/images/aboutme-grad.png'
-import '/images/aboutme-cat.png'
-import '/images/aboutme-art.png'
-import '/images/aboutme-concert.png'
-import '/images/aboutme-star.png'
-import '/images/aboutme-star2.png'
 
 const AboutMeModal = () => {
     // common styles

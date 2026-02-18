@@ -2,7 +2,6 @@ import React from 'react';
 import '../../index.css' // Import Tailwind CSS fi
 import { motion } from 'framer-motion'; // Import Framer Motionle
 
-import '/images/monitor-bases.png';
 import FolderGrid from './FolderGrid';
 //__________________________________________________________________________________________________________
 

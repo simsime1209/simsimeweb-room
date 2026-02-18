@@ -1,9 +1,6 @@
 import React from 'react';
 import '../../index.css' // Import Tailwind CSS file
 import { motion } from 'framer-motion'; // Import Framer Motionle
-import '/images/workexp-front.png';
-import '/images/workexp-back.png';
-import '/images/resume.png';
 
 const WorkModal = () => {
   return (

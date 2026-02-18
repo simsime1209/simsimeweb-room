@@ -3,14 +3,6 @@ import { motion } from 'framer-motion'; // Import Framer Motion
 import '../../index.css'; // Import Tailwind CSS file
 import { Barcode } from "lucide-react";
 
-//import images
-import '/images/papertexture.jpg';
-import '/images/education-mmhs.jpg';
-import '/images/education-mmhs-logo.jpg';
-import '/images/education-wlu-logo.jpg';
-import '/images/education-wlu.jpg';
-import '/images/education-uw-logo.png';
-import '/images/education-uw.png';
 
 function EducationModal() {
     //card information
