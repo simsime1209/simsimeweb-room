@@ -36,6 +36,7 @@ const FolderGrid = () => {
   //__________________________________________________________________________________________________________
 
   return (
+    <>
     <div className="grid portrait:grid-cols-3 grid-cols-3 ml-[6%] mt-2 flex justify-center items-center">
       {projects.map((project, index) => (
         <motion.div
@@ -72,30 +73,20 @@ const FolderGrid = () => {
         </motion.div>
       ))}
 
-      {/*__________________________________________________________________________________________________________*/}
+    </div>
 
       {/* Modal */}
       {selectedProject && (
-        <div className="absolute bg-transparent flex justify-start items-start z-50 ">
-          <div
-            className="
-              portrait:max-w-[83%] portrait:max-h-[70%] portrait:mt-[0%] portrait:ml-[0.5vw] 
-              max-w-[100%] ml-[-2%] mt-[-5%] max-h-[10%]
-              md:max-w-[95%] md:ml-[-4%] md:mt-[0%] md:max-h-[100%] 
-              bg-[#d1cbbd] mb-[22%] pl-4 pb-3 pt-2 pr-2 rounded-lg shadow-lg flex flex-col shadow-m"
-          >
-            <div className="flex flex-row justify-between sticky h-[2%] bg-[#d1cbbd] top-0">
+        <div className="absolute left-0 right-0 bottom-0 top-[9%] flex justify-center items-center z-50" onWheel={(e) => e.stopPropagation()}>
+          <div className="portrait:w-[92%] w-[90%] h-[85%] bg-[#d1cbbd] pl-4 pb-3 pt-2 pr-2 rounded-lg shadow-lg flex flex-col">
+            <div className="flex flex-row justify-between bg-[#d1cbbd]">
               <h2 className="portrait:text-[2.5vh] text-[3vh] text-[#393229] font-bold mt-1">{selectedProject.name}</h2>
               <button onClick={closeModal} className="portrait:text-[2.5vh] text-[3vh] text-[#52483b] mb-1 mr-3">
                 ⨉
               </button>
             </div>
-            <div className="rounded flex-grow overflow-hidden">
-              <div
-                className="overflow-y-auto overflow-x-hidden portrait:max-h-[45vh] portrait:min-h-[45vh]
-              max-h-[38vh] min-h-[38vh]
-              md:max-h-[48vh] md:min-h-[48vh] px-2 scrollbar-thin scrollbar-thumb-[#bfb6a8] scrollbar-track-transparent"
-              >
+            <div className="rounded flex-1 overflow-hidden min-h-0">
+              <div className="overflow-y-auto overflow-x-hidden h-full px-2 scrollbar-thin scrollbar-thumb-[#bfb6a8] scrollbar-track-transparent">
                 <div
                   className="w-[100%] portrait:h-[20vh] rounded h-[28vh] bg-cover"
                   style={{ backgroundImage: `url(${selectedProject.thumbnail})`, backgroundPosition: "center 50%" }}
@@ -114,7 +105,7 @@ const FolderGrid = () => {
                 </div>
                 <div className="mt-3">
                   {selectedProject.description.split("\n").map((line, index) => (
-                    <p className=" w-[99%] portrait:text-[1.8vh] px-4 text-[2vh] text-[#52483b] mt-2" key={index}>
+                    <p className="w-[99%] portrait:text-[1.8vh] px-4 text-[2vh] text-[#52483b] mt-2" key={index}>
                       {parseBoldText(line)}
                     </p>
                   ))}
@@ -124,7 +115,7 @@ const FolderGrid = () => {
             <div className="text-right mt-2 text-[1.6vh] font-bold underline">
               <a
                 href={selectedProject.link}
-                className=" text-[#393229] hover:text-[#52483b]"
+                className="text-[#393229] hover:text-[#52483b]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -134,7 +125,7 @@ const FolderGrid = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }
 

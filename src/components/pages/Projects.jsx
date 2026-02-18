@@ -38,7 +38,7 @@ const ProjectsModal = () => {
                                 <div className='w-5/6 h-6 bg-[#35322E] rounded-md mb-1'></div>
                             </div>
                             {/* rightcol-storage*/}
-                            <div className='h-[100%] w-[100%] flex flex-col justify-center items-center'> 
+                            <div className='relative h-[100%] w-[100%] flex flex-col justify-center items-center'>
                                 {/* rightcol-top*/}
                                 <div className='ml-[2.5px] w-[99.7%] h-[9%] bg-[#403B37] rounded-tr-xl flex flex-row content-start items-center'>
                                     <div className='portrait:w-[60%] w-[40%] h-[63%] bg-[#35322E] ml-2 rounded-md'>
