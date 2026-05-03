@@ -21,7 +21,7 @@ const WorkModal = () => {
     transition={{ duration: 0.08, ease: 'easeOut' }}
     className="absolute w-full h-full flex justify-center items-start pt-[4vh]"
   >
-    <a href="/images/Resume_W26.pdf" target="_blank" rel="noopener noreferrer">
+    <a href="/images/Resume_F26.pdf" target="_blank" rel="noopener noreferrer">
     <motion.img
       src='/images/resume.png'
       className="rounded-sm max-h-[53vh] md:max-h-[62vh] lg:max-h-[70vh] object-cover"

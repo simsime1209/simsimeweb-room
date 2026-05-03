@@ -69,7 +69,7 @@ const ContactModal = () => {
                                     className="w-6 h-6 "
                                 />
                             </a>
-                            <a href="/images/Resume_W26.pdf" target="_blank" rel="noopener noreferrer">
+                            <a href="/images/Resume_F26.pdf" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src='/images/icon-resume.png'
                                     alt='resume'
